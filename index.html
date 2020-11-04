@@ -20,7 +20,7 @@
             <input type="number" id="height" name="height" placeholder="Enter your height"><br>
         </p>
         <button type="button" onclick="calculateBMI()">Calcualte</button>
-        <button type="button" onclick="reset()">Reset</button>
+        <button type="reset" onclick="reset()">Reset</button>
     </form>
     <h3>Results</h3>
     <div id="result"></div>
@@ -52,7 +52,9 @@ function reset()
              $("input[name='weight']").val('');
              $("input[name='height']").val('');
             
-             $('#result').reset();
+             //$("#result").html()="";
+             $("#result").empty();
+             
 
 }
     </script>
